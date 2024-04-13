@@ -93,5 +93,12 @@ export const website4 = [
         name: '前端大厂面试宝典',
         url: 'https://www.mianshibook.com/',
         description: '系统性前端面试知识点，无论是进行大厂面试前准备、职级提升还是系统学习，都将会是你的好帮手'
-    }
+    },
+    {
+        logo: basePath + '',
+        name: 'web前端面试',
+        url: 'https://vue3js.cn/interview/',
+        description: '前端面试题库',
+        github:'https://github.com/febobo/web-interview'
+    },
 ];

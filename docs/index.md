@@ -15,11 +15,11 @@ hero:
           link: /pages/front-end/statistic/basic/
         - theme: alt
           text: Python汇总
-          link: /pages/Python/statistic/basic/
+          link: /pages/python/statistic/all
 
 features:
     - icon:
-          src: /assets/jump.png
+          src: '/assets/jump.png'
       title: 跳一跳
       details: 进来玩会~
       link: /components/JumpGame/index
