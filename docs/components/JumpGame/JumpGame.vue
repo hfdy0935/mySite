@@ -6,9 +6,11 @@
                 <Button type="primary" @click="reCharge">充值6块复活</Button>
             </template>
         </Modal>
+        <!-- 容器 -->
+        <div ref="container" class="jump-container"></div>
         <!-- 显示当前信息 -->
         <Card class="card"
-            :bodyStyle="{ width: '100%', display: 'flex', justifyContent: 'space-evenly', alignItems: 'center' }">
+            :bodyStyle="{ width: '100%', height: '100%', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }">
             <Button type="primary" @mousedown="handleMousedown" @mouseup="handleMouseup" @touchstart="handleMousedown"
                 @touchend="handleMouseup" :disabled="isJumping">跳</Button>
             <span>距离： {{ range }}</span>
@@ -17,8 +19,6 @@
             <Button type="primary" @click="saveAsImage">存图</Button>
             <Button type="primary" danger @click="restart" :disabled="isJumping">重置</Button>
         </Card>
-        <!-- 容器 -->
-        <div ref="container" class="jump-container"></div>
     </div>
 </template>
 
@@ -43,7 +43,7 @@ const renderer: THREE.WebGLRenderer = new THREE.WebGLRenderer({
     antialias: true
 });
 renderer.shadowMap.enabled = true;
-renderer.setSize(900, 900);
+renderer.setSize(Math.min(window.innerWidth, window.innerHeight - 100), Math.min(window.innerWidth, window.innerHeight - 100));
 renderer.setPixelRatio(Math.max(window.devicePixelRatio, 2));
 
 // 初始化
@@ -326,6 +326,10 @@ function animate() {
 }
 animate();
 
+// 窗口缩放事件
+const windowResize = () => {
+    renderer.setSize(Math.min(window.innerWidth, window.innerHeight - 100), Math.min(window.innerWidth, window.innerHeight - 100));
+};
 onMounted(() => {
     container.value!.appendChild(renderer.domElement);
     container.value!.ondblclick = () => {
@@ -335,20 +339,11 @@ onMounted(() => {
             container.value!.requestFullscreen();
         }
     };
+    // 监听窗口缩放
+    window.addEventListener('resize', windowResize);
 });
-
-// 网页宽度小于900px时改变画布大小
-let windowSizeWatcher: any = setInterval(() => {
-    const value: number = window.innerWidth;
-    if (value <= 900) {
-        renderer.setSize(value * 0.9, value * 0.9);
-    } else {
-        renderer.setSize(1000, 1000);
-    }
-}, 50);
 onBeforeUnmount(() => {
-    clearInterval(windowSizeWatcher);
-    windowSizeWatcher = null;
+    window.removeEventListener('resize', windowResize);
 });
 
 const saveAsImage = () => {
@@ -378,21 +373,29 @@ const clipToClipBoard = () => {
 
 <style scoped lang="scss">
 .outer {
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
     .card {
-        width: 500px;
-        height: 10%;
+        width: 100%;
+        max-width: 600px;
+        height: 100px;
+        transition: all 0.3s linear;
+
+        @media(max-width: 400px) {
+            & {
+                transform: scale(0.8);
+            }
+        }
     }
 
     .jump-container {
-        width: 1000px;
-        height: 500px;
+        width: 100vw;
+        height: calc(100% - 100px);
         display: flex;
         flex-direction: column;
         justify-content: center;
