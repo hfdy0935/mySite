@@ -2,12 +2,13 @@ import { defineConfig } from 'vitepress';
 // 顶部导航配置
 import { frontEndTopNav, frontEndSideBar } from '../pages/front-end';
 import { pythonTopNav, pythonSideBar } from '../pages/python';
+// base
+import { base } from '../constant';
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
     title: 'mySite',
-    // 部署到github时把这个解开，在mySite仓库
-    base: '/mySite/',
+    base,
     description: 'A VitePress Site',
     themeConfig: {
         // https://vitepress.dev/reference/default-theme-config
@@ -21,7 +22,6 @@ export default defineConfig({
         outlineTitle: '本页目录',
         lightModeSwitchTitle: '切换为浅色模式',
         darkModeSwitchTitle: '切换为深色模式',
-
 
         sidebar: {
             ...frontEndSideBar,
@@ -49,5 +49,5 @@ export default defineConfig({
             lazyLoading: true
         }
     },
-    lastUpdated: true, // 最后更新时间
+    lastUpdated: true // 最后更新时间
 });

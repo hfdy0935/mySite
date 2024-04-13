@@ -49,9 +49,8 @@ titleTemplate: 前端汇总
 
 <script setup lang="ts">
 import WebsiteBox from '/components/WebsiteBox/index.vue';
-import {website1, website2, website3,website4,website5,website6,website7} from './data/website.ts';
+import {website1, website2, website3,website4,website5,website6,website7} from './data/website';
 import {table1,table2} from './data/table.ts';
-import {Switch} from 'ant-design-vue';
 import Table from '/components/Table/index.vue';
 
 </script>
