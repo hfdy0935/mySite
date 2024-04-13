@@ -7,7 +7,7 @@ hero:
     # text: "A VitePress Site"
     # tagline: My great project tagline
     image:
-        src: /assets/logo.svg
+        src: assets/logo.svg
         alt: 收藏小站
     actions:
         - theme: brand
@@ -19,7 +19,7 @@ hero:
 
 features:
     - icon:
-          src: '/assets/jump.png'
+          src: assets/jump.png
       title: 跳一跳
       details: 进来玩会~
       link: /components/JumpGame/index

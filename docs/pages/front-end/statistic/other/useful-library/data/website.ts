@@ -6,14 +6,14 @@ export const website1 = [
     // 自动化测试、爬虫
     [
         {
-            logo: basePath + 'front-end/statistic/other/Playwright.svg',
+            logo: basePath + 'assets/front-end/statistic/other/Playwright.svg',
             name: 'Playwright',
             url: 'https://playwright.dev/',
             description: '浏览器自动化测试工具，支持Node.js、Java、Python、.Net',
             github: 'https://github.com/microsoft/playwright'
         },
         {
-            logo: basePath + 'front-end/statistic/other/Playwright.svg',
+            logo: basePath + 'assets/front-end/statistic/other/Playwright.svg',
             name: 'Playwright中文',
             url: 'https://playwright.nodejs.cn/',
             description: '为现代 Web 应用提供可靠的端到端测试'
@@ -27,14 +27,14 @@ export const website1 = [
         github: 'https://github.com/pyppeteer/pyppeteer'
     },
     {
-        logo: basePath + 'front-end/statistic/other/Selenium.ico',
+        logo: basePath + 'assets/front-end/statistic/other/Selenium.ico',
         name: 'Selenium',
         url: 'https://www.selenium.dev/',
         description: '浏览器自动化测试、爬虫，支持Java、Python、Ruby、JavaScript、Kotlin等',
         github: 'https://github.com/SeleniumHQ/selenium'
     },
     {
-        logo: basePath + 'front-end/statistic/other/Appium.png',
+        logo: basePath + 'assets/front-end/statistic/other/Appium.png',
         name: 'Appium',
         url: 'https://appium.io/docs/en/latest/',
         description: '移动端、浏览器、桌面、电视等用户界面自动化，支持JavaScript、Python、Java、Ruby、.NET',
@@ -45,7 +45,7 @@ export const website1 = [
 export const website2 = [
     // 工具库
     {
-        logo: basePath + 'front-end/statistic/other/Lodash.svg',
+        logo: basePath + 'assets/front-end/statistic/other/Lodash.svg',
         name: 'Lodash',
         url: 'https://lodash.com/',
         description: 'A modern JavaScript utility library delivering modularity, performance & extras.',
@@ -53,14 +53,14 @@ export const website2 = [
     },
     [
         {
-            logo: basePath + 'front-end/statistic/other/Bootstrap.ico',
+            logo: basePath + 'assets/front-end/statistic/other/Bootstrap.ico',
             name: 'Bootstrap',
             url: 'https://getbootstrap.com/',
             description: 'Powerful, extensible, and feature-packed front-end toolkit.',
             github: 'https://github.com/twbs/bootstrap'
         },
         {
-            logo: basePath + 'front-end/statistic/other/Bootstrap.ico',
+            logo: basePath + 'assets/front-end/statistic/other/Bootstrap.ico',
             name: 'Bootstrap中文',
             url: 'https://www.bootcss.com/',
             description: '简洁、直观、强悍的前端开发框架，让web开发更迅速、简单'
@@ -70,51 +70,51 @@ export const website2 = [
 
 export const website3 = [
     {
-        logo: basePath + 'front-end/statistic/other/Apipost.ico',
+        logo: basePath + 'assets/front-end/statistic/other/Apipost.ico',
         name: 'Apipost',
         url: 'https://www.apipost.cn/',
         description: 'API设计、调试、文档、自动化测试'
     },
     {
-        logo: basePath + 'front-end/statistic/other/Apifox.png',
+        logo: basePath + 'assets/front-end/statistic/other/Apifox.png',
         name: 'Apifox',
         url: 'https://apifox.com/',
         description: 'API设计、开发、测试一体化'
     },
     {
-        logo: basePath + 'front-end/statistic/other/Swagger.svg',
+        logo: basePath + 'assets/front-end/statistic/other/Swagger.svg',
         name: 'Swagger',
         url: 'https://swagger.io/',
         description: '生成、调用API接口文档'
     },
     {
-        logo: basePath + 'front-end/statistic/other/Postman.png',
+        logo: basePath + 'assets/front-end/statistic/other/Postman.png',
         name: 'Postman',
         url: 'https://www.postman.com/',
         description: '生成、调用API接口文档'
     },
     {
-        logo: basePath + 'front-end/statistic/other/YApi Pro.png',
+        logo: basePath + 'assets/front-end/statistic/other/YApi Pro.png',
         name: 'YApi Pro',
         url: 'https://yapi.pro/',
         description: '接口API管理',
         github: 'https://github.com/YMFE/yapi'
     },
     {
-        logo: basePath + 'front-end/statistic/other/Eolink.ico',
+        logo: basePath + 'assets/front-end/statistic/other/Eolink.ico',
         name: 'Eolink',
         url: 'https://wasa.w.dev.test.eolinker.com/',
         description: 'API管理、测试'
     },
     {
-        logo: basePath + 'front-end/statistic/other/ShowDoc.ico',
+        logo: basePath + 'assets/front-end/statistic/other/ShowDoc.ico',
         name: 'ShowDoc',
         url: 'https://www.showdoc.com.cn/',
         description: 'API文档',
         github: 'https://github.com/star7th/showdoc'
     },
     {
-        logo: basePath + 'front-end/statistic/other/Rap2.png',
+        logo: basePath + 'assets/front-end/statistic/other/Rap2.png',
         name: 'Rap2',
         url: 'http://rap2.taobao.org/',
         description: 'RAP接口管理平台',
@@ -126,45 +126,45 @@ export const website4 = [
     // 可视化
     [
         {
-            logo: basePath + 'front-end/statistic/other/ECharts.png',
+            logo: basePath + 'assets/front-end/statistic/other/ECharts.png',
             name: 'ECharts',
             url: 'https://echarts.apache.org/zh/index.html',
             description: '基于JavaScript的数据可视化图表库，提供直观，生动，可交互，可个性化定制的数据可视化图表',
             github: 'https://github.com/apache/echarts'
         },
         {
-            logo: basePath + 'front-end/statistic/other/echarts-eg1-PPChart.ico',
+            logo: basePath + 'assets/front-end/statistic/other/echarts-eg1-PPChart.ico',
             name: '例1',
             url: 'https://ppchart.com/#/',
             description: 'PPChart，ECharts案例汇总'
         },
         {
-            logo: basePath + 'front-end/statistic/other/echarts-eg2.png',
+            logo: basePath + 'assets/front-end/statistic/other/echarts-eg2.png',
             name: '例2',
             url: 'https://www.makeapie.cn/echarts',
             description: 'ECharts案例汇总'
         },
         {
-            logo: basePath + 'front-end/statistic/other/echarts-eg3-MCChart.ico',
+            logo: basePath + 'assets/front-end/statistic/other/echarts-eg3-MCChart.ico',
             name: '例3',
             url: 'https://echarts.zhangmuchen.top/#/index',
             description: 'MCChart，ECharts案例汇总'
         },
         {
-            logo: basePath + 'front-end/statistic/other/echarts-eg4.png',
+            logo: basePath + 'assets/front-end/statistic/other/echarts-eg4.png',
             name: '例4',
             url: 'http://chart.majh.top/',
             description: 'ECharts案例汇总'
         },
         {
-            logo: basePath + 'front-end/statistic/other/echarts-eg5.ico',
+            logo: basePath + 'assets/front-end/statistic/other/echarts-eg5.ico',
             name: '例5',
             url: 'https://www.isqqw.com/',
             description: 'ECharts案例汇总'
         }
     ],
     {
-        logo: basePath + 'front-end/statistic/other/D3.png',
+        logo: basePath + 'assets/front-end/statistic/other/D3.png',
         name: 'D3',
         url: 'https://d3js.org/',
         description: 'The JavaScript library for bespoke data visualization',

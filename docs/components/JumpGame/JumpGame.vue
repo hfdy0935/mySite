@@ -44,7 +44,7 @@ const renderer: THREE.WebGLRenderer = new THREE.WebGLRenderer({
     antialias: true
 });
 renderer.shadowMap.enabled = true;
-let minWidthOrHeight = ref<number>(Math.min(window.innerWidth, window.innerHeight - 100));
+let minWidthOrHeight = ref<number>(Math.min(window.innerWidth, window.innerHeight - 100) - 80);
 renderer.setSize(minWidthOrHeight.value, minWidthOrHeight.value);
 renderer.setPixelRatio(Math.max(window.devicePixelRatio, 2));
 
@@ -330,7 +330,7 @@ animate();
 
 // 窗口缩放事件
 const windowResize = () => {
-    minWidthOrHeight.value = Math.min(window.innerWidth, window.innerHeight - 100);
+    minWidthOrHeight.value = Math.min(window.innerWidth, window.innerHeight - 100) - 80;
     renderer.setSize(minWidthOrHeight.value, minWidthOrHeight.value);
 };
 onMounted(() => {
@@ -392,12 +392,11 @@ const clipToClipBoard = () => {
 
     .jump-container {
         width: v-bind(minWidthOrHeight);
-        height: calc(100% - 80px);
+        height: v-bind(minWidthOrHeight);
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-
 }
 </style>
