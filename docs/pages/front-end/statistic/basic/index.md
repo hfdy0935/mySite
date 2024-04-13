@@ -45,12 +45,16 @@ titleTemplate: 前端汇总
 
 <WebsiteBox :data="website7"/>
 
+## 8. git教程
+
+<WebsiteBox :data="website8"/>
+<Table :data="table3" />
 
 
 <script setup lang="ts">
 import WebsiteBox from '/components/WebsiteBox/index.vue';
-import {website1, website2, website3,website4,website5,website6,website7} from './data/website';
-import {table1,table2} from './data/table.ts';
+import {website1, website2, website3,website4,website5,website6,website7,website8} from './data/website';
+import {table1,table2,table3} from './data/table.ts';
 import Table from '/components/Table/index.vue';
 
 </script>

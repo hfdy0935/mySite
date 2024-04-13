@@ -283,3 +283,13 @@ export const website7 = [
         }
     ]
 ];
+
+export const website8 = [
+    // git教程
+    {
+        logo: basePath + 'assets/front-end/statistic/basic/廖雪峰网站.ico',
+        name: '廖雪峰git教程',
+        url: 'https://www.liaoxuefeng.com/wiki/896043488029600',
+        description: '还有spring、java、js、python...'
+    }
+];

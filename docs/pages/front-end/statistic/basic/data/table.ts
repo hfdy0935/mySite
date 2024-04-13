@@ -24,3 +24,35 @@ export const table2 = [
         }
     }
 ];
+
+export const table3 = [
+    // git教程
+    {
+        name: 'Gtihub与Git简明教程',
+        links: {
+            website: '',
+            github: 'https://github.com/lavor-zl/Github-Git/tree/master'
+        }
+    },
+    {
+        name: 'Git中文教程',
+        links: {
+            website: 'https://geeeeeeeeek.github.io/git-recipes/',
+            github: 'https://github.com/geeeeeeeeek/git-recipes'
+        }
+    },
+    {
+        name: 'Git 教程',
+        links: {
+            website: '',
+            github: 'https://github.com/wangdoc/git-tutorial'
+        }
+    },
+    {
+        name: '把廖雪峰Git教程整理成PDF版',
+        links: {
+            website: '',
+            github: 'https://github.com/numbbbbb/Git-Tutorial-By-liaoxuefeng'
+        }
+    }
+]
