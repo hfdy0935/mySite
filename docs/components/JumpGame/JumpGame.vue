@@ -7,12 +7,13 @@
             </template>
         </Modal>
         <!-- 容器 -->
-        <div ref="container" class="jump-container"></div>
+        <div ref="container" class="jump-container" @mousedown="handleMousedown" @mouseup="handleMouseup"
+            @touchstart="handleMousedown" @touchend="handleMouseup"></div>
         <!-- 显示当前信息 -->
         <Card class="card"
-            :bodyStyle="{ width: '100%', height: '100%', display: 'flex', justifyContent: 'space-between', alignItems: 'center',padding:0}">
-            <Button type="primary" @mousedown="handleMousedown" @mouseup="handleMouseup" @touchstart="handleMousedown"
-                @touchend="handleMouseup" :disabled="isJumping">跳</Button>
+            :bodyStyle="{ width: '100%', height: '100%', display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: 0 }">
+            <!-- <Button type="primary" @mousedown="handleMousedown" @mouseup="handleMouseup" @touchstart="handleMousedown"
+                @touchend="handleMouseup" :disabled="isJumping">跳</Button> -->
             <span>距离： {{ range }}</span>
             <span>分数： {{ score }}</span>
             动感<Switch v-model:checked="isCameraYChange"></Switch>
@@ -43,7 +44,8 @@ const renderer: THREE.WebGLRenderer = new THREE.WebGLRenderer({
     antialias: true
 });
 renderer.shadowMap.enabled = true;
-renderer.setSize(Math.min(window.innerWidth, window.innerHeight - 100), Math.min(window.innerWidth, window.innerHeight - 100));
+let minWidthOrHeight = ref<number>(Math.min(window.innerWidth, window.innerHeight - 100));
+renderer.setSize(minWidthOrHeight.value, minWidthOrHeight.value);
 renderer.setPixelRatio(Math.max(window.devicePixelRatio, 2));
 
 // 初始化
@@ -328,7 +330,8 @@ animate();
 
 // 窗口缩放事件
 const windowResize = () => {
-    renderer.setSize(Math.min(window.innerWidth, window.innerHeight - 100), Math.min(window.innerWidth, window.innerHeight - 100));
+    minWidthOrHeight.value = Math.min(window.innerWidth, window.innerHeight - 100);
+    renderer.setSize(minWidthOrHeight.value, minWidthOrHeight.value);
 };
 onMounted(() => {
     container.value!.appendChild(renderer.domElement);
@@ -385,16 +388,10 @@ const clipToClipBoard = () => {
         max-width: 600px;
         height: 80px;
         transition: all 0.3s linear;
-
-        @media(max-width: 500px) {
-            & {
-                // transform: scale(0.9);
-            }
-        }
     }
 
     .jump-container {
-        width: 100vw;
+        width: v-bind(minWidthOrHeight);
         height: calc(100% - 80px);
         display: flex;
         flex-direction: column;
