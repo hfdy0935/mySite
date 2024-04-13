@@ -10,7 +10,7 @@
         <div ref="container" class="jump-container"></div>
         <!-- 显示当前信息 -->
         <Card class="card"
-            :bodyStyle="{ width: '100%', height: '100%', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }">
+            :bodyStyle="{ width: '100%', height: '100%', display: 'flex', justifyContent: 'space-between', alignItems: 'center',padding:0}">
             <Button type="primary" @mousedown="handleMousedown" @mouseup="handleMouseup" @touchstart="handleMousedown"
                 @touchend="handleMouseup" :disabled="isJumping">跳</Button>
             <span>距离： {{ range }}</span>
@@ -383,29 +383,23 @@ const clipToClipBoard = () => {
     .card {
         width: 100%;
         max-width: 600px;
-        height: 100px;
+        height: 80px;
         transition: all 0.3s linear;
 
-        @media(max-width: 400px) {
+        @media(max-width: 500px) {
             & {
-                transform: scale(0.8);
+                // transform: scale(0.9);
             }
         }
     }
 
     .jump-container {
         width: 100vw;
-        height: calc(100% - 100px);
+        height: calc(100% - 80px);
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-
-        @media(max-width:650px) {
-            & {
-                width: 100px;
-            }
-        }
     }
 
 }
