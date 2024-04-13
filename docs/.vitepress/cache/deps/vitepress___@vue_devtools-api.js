@@ -1,10 +1,9 @@
 import {
-  init_vue_runtime_esm_bundler,
   isReactive,
   isRef,
   toRaw
-} from "./chunk-ZZRX3E26.js";
-import "./chunk-CEQRFMJQ.js";
+} from "./chunk-CKQ4TNQ3.js";
+import "./chunk-ZS7NZCD4.js";
 
 // node_modules/@vue/devtools-shared/dist/index.js
 var __create = Object.create;
@@ -523,8 +522,6 @@ async function _applyPromised(fn, _this, args) {
 }
 
 // node_modules/@vue/devtools-kit/dist/index.js
-init_vue_runtime_esm_bundler();
-init_vue_runtime_esm_bundler();
 var __create2 = Object.create;
 var __defProp2 = Object.defineProperty;
 var __getOwnPropDesc2 = Object.getOwnPropertyDescriptor;

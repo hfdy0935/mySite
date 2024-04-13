@@ -1,91 +1,76 @@
 {
-  "hash": "ba15ebe7",
+  "hash": "70da33b6",
   "configHash": "641d8f1a",
-  "lockfileHash": "d27208f6",
-  "browserHash": "ddda0134",
+  "lockfileHash": "d243a12f",
+  "browserHash": "5abaf9b5",
   "optimized": {
     "vue": {
       "src": "../../../../node_modules/vue/dist/vue.runtime.esm-bundler.js",
       "file": "vue.js",
-      "fileHash": "f9398c84",
+      "fileHash": "9e3444cc",
       "needsInterop": false
     },
     "vitepress > @vue/devtools-api": {
       "src": "../../../../node_modules/@vue/devtools-api/dist/index.js",
       "file": "vitepress___@vue_devtools-api.js",
-      "fileHash": "db814481",
+      "fileHash": "c26fd62d",
       "needsInterop": false
     },
     "vitepress > @vueuse/core": {
       "src": "../../../../node_modules/@vueuse/core/index.mjs",
       "file": "vitepress___@vueuse_core.js",
-      "fileHash": "1eea5d62",
+      "fileHash": "54584fa5",
       "needsInterop": false
     },
     "vitepress > @vueuse/integrations/useFocusTrap": {
       "src": "../../../../node_modules/@vueuse/integrations/useFocusTrap.mjs",
       "file": "vitepress___@vueuse_integrations_useFocusTrap.js",
-      "fileHash": "95b1d0eb",
+      "fileHash": "4caf5444",
       "needsInterop": false
     },
     "vitepress > mark.js/src/vanilla.js": {
       "src": "../../../../node_modules/mark.js/src/vanilla.js",
       "file": "vitepress___mark__js_src_vanilla__js.js",
-      "fileHash": "3e1410a8",
+      "fileHash": "cfdb009d",
       "needsInterop": false
     },
     "vitepress > minisearch": {
       "src": "../../../../node_modules/minisearch/dist/es/index.js",
       "file": "vitepress___minisearch.js",
-      "fileHash": "aff8a4ea",
+      "fileHash": "7e827089",
       "needsInterop": false
     },
     "pinia": {
       "src": "../../../../node_modules/pinia/dist/pinia.mjs",
       "file": "pinia.js",
-      "fileHash": "4db37590",
+      "fileHash": "69b18f16",
       "needsInterop": false
     },
     "pinia-plugin-persistedstate": {
       "src": "../../../../node_modules/pinia-plugin-persistedstate/dist/index.mjs",
       "file": "pinia-plugin-persistedstate.js",
-      "fileHash": "9263c180",
+      "fileHash": "c9e90145",
       "needsInterop": false
     },
     "ant-design-vue": {
       "src": "../../../../node_modules/ant-design-vue/es/index.js",
       "file": "ant-design-vue.js",
-      "fileHash": "9cb7eefe",
+      "fileHash": "06cc296e",
       "needsInterop": false
-    },
-    "three": {
-      "src": "../../../../node_modules/three/build/three.module.js",
-      "file": "three.js",
-      "fileHash": "7b05a248",
-      "needsInterop": false
-    },
-    "ant-design-vue/lib/button/style": {
-      "src": "../../../../node_modules/ant-design-vue/lib/button/style/index.js",
-      "file": "ant-design-vue_lib_button_style.js",
-      "fileHash": "303a440c",
-      "needsInterop": true
     }
   },
   "chunks": {
-    "chunk-3NCCDKXG": {
-      "file": "chunk-3NCCDKXG.js"
+    "chunk-IU735CDI": {
+      "file": "chunk-IU735CDI.js"
     },
-    "chunk-MDRAQTWM": {
-      "file": "chunk-MDRAQTWM.js"
+    "chunk-O3YQPVDG": {
+      "file": "chunk-O3YQPVDG.js"
     },
-    "chunk-YAVQAL23": {
-      "file": "chunk-YAVQAL23.js"
+    "chunk-CKQ4TNQ3": {
+      "file": "chunk-CKQ4TNQ3.js"
     },
-    "chunk-ZZRX3E26": {
-      "file": "chunk-ZZRX3E26.js"
-    },
-    "chunk-CEQRFMJQ": {
-      "file": "chunk-CEQRFMJQ.js"
+    "chunk-ZS7NZCD4": {
+      "file": "chunk-ZS7NZCD4.js"
     }
   }
 }

@@ -1,5 +1,5 @@
 import { defineConfig } from 'vitepress';
-// 顶部导航配置
+// 顶部和左侧导航配置
 import { frontEndTopNav, frontEndSideBar } from '../pages/front-end';
 import { pythonTopNav, pythonSideBar } from '../pages/python';
 // base
