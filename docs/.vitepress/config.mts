@@ -28,14 +28,14 @@ export default defineConfig({
             ...pythonSideBar
         },
         socialLinks: [{ icon: 'github', link: 'https://github.com/vuejs/vitepress' }],
-        // lastUpdated: {
-        //     // 最后更新时间
-        //     text: '更新于',
-        //     formatOptions: {
-        //         dateStyle: 'full',
-        //         timeStyle: 'medium'
-        //     }
-        // },
+        lastUpdated: {
+            // 最后更新时间
+            text: '更新于',
+            formatOptions: {
+                dateStyle: 'full',
+                timeStyle: 'medium'
+            }
+        },
         search: {
             // 搜索
             provider: 'local'
